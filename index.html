@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OK</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Mono&display=swap" rel="stylesheet">
+<body>
+  <div class="main-content">
+      <span>Kudos to you for your curiosity 😉</span>
+      <span>But you here too early</span>
+      <span>Website is under development</span>
+      <span>you can still contact me at</span>
+      <span>oleh@kolinko.io</span>
+      <span class="code">01101111 01101011</span>
+      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  </div>
+</body>
+
+<style>
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
+  span {
+    font-size: 40px;
+    margin: 5px;
+  }
+  .main-content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .code {
+    font-family: 'PT Mono', monospace;
+  }
+
+  .lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #111;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 .8s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 .8s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 .8s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 .8s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+</style>
+
+</html>
